@@ -11,12 +11,15 @@ import 'pages/auth/otherAccount.dart';
 
 void main() {
   String token;
-  runApp(DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => MyApp(
-      token: token = 'jlfgjkjishf',
-    ),
+  runApp(MyApp(
+    token: token = 'jlfgjkjishf',
   ));
+  // runApp(DevicePreview(
+  //   enabled: !kReleaseMode,
+  //   builder: (context) => MyApp(
+  //     token: token = 'jlfgjkjishf',
+  //   ),
+  // ));
 }
 
 class MyApp extends StatelessWidget {
